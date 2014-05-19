@@ -12,6 +12,7 @@ public class Gcd {
 		Scanner input=new Scanner(System.in);
 		int number1=input.nextInt();
 		int number2=input.nextInt();
+		int multipy=number1*number2;
 		while(number1!=number2){
 			if (number1<number2){
 				int temp=number1;
@@ -20,7 +21,8 @@ public class Gcd {
 			}
 			number1-=number2;
 		}
-		System.out.println(number1);
+		System.out.println("Gcd:"+number1);
+		System.out.println("Lcm:"+multipy/number1);
 	}
 
 }
